@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecionamento</title>
+  <script>
+    // Configuração do redirecionamento
+    const redirectUrl = "https://chat.whatsapp.com/SEU_LINK_DE_CONVITE";
+    const redirectDelay = 5000; // 5000ms = 5 segundos
+
+    // Função para redirecionar após o tempo configurado
+    window.onload = function() {
+      setTimeout(() => {
+        window.location.href = redirectUrl;
+      }, redirectDelay);
+    };
+  </script>
+</head>
+<body>
+  <div style="text-align: center; margin-top: 50px;">
+    <h1>Obrigado por se inscrever!</h1>
+    <p>Você será redirecionado para nosso grupo no WhatsApp em 5 segundos.</p>
+    <p>Se não for redirecionado automaticamente, <a href="https://chat.whatsapp.com/SEU_LINK_DE_CONVITE">clique aqui</a>.</p>
+  </div>
+</body>
+</html>
